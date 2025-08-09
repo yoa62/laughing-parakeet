@@ -1,7 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* Change the URL below to your desired background image */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-gLBX8dZXmGCTaOdvY55BmUgSjiy9Ycznw&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 header {

@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .overlay {
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+        }
+        main {
+            margin: 40px auto;
+            max-width: 700px;
+        }
+        #clickMeBtn {
+            padding: 20px 50px;
+            font-size: 2rem;
+            border-radius: 10px;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #clickMeBtn:hover {
+            background: #005fa3;
+        }
+    </style>
 </head>
 <body>
     <div class="overlay">
@@ -12,9 +45,11 @@
             <h1>Welcome</h1>
         </header>
         <main>
-            <img src="https://preview.redd.it/his-lack-of-thumbnails-always-get-me-lol-v0-61j5y4ljwpga1.jpg?width=640&crop=smart&auto=webp&s=6cfed5bd20e4bd51ec6e840e33bd7f3e8711cc37" alt="Your Image" id="https://preview.redd.it/his-lack-of-thumbnails-always-get-me-lol-v0-61j5y4ljwpga1.jpg?width=640&crop=smart&auto=webp&s=6cfed5bd20e4bd51ec6e840e33bd7f3e8711cc37" style="max-width:100%;height:auto;">
+            <img src="" alt="Your Image" id="main-image" style="max-width:100%;height:auto;">
             <br><br>
             <button id="clickMeBtn">Click Me to redirect to Google</button>
+            <!-- Add more content here to test scrolling -->
+            <div style="height: 1200px;"></div>
         </main>
         <footer>
             <p>&copy; A website full of dreams and wonderland</p>
@@ -22,7 +57,7 @@
     </div>
     <script>
         // Change the URL below to your desired link
-        const yourLink = "https://PornHub.com";
+        const yourLink = "https://google.com";
         document.getElementById('clickMeBtn').onclick = function() {
             window.location.href = yourLink;
         };
