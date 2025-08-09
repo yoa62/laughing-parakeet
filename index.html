@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="russian">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Website</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a simple website created to demonstrate basic HTML, CSS, and JavaScript structure.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out for more information!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Simple Website</p>
-    </footer>
-    <script src="scripts/main.js"></script>
+    <div class="overlay">
+        <header>
+            <h1>Welcome</h1>
+        </header>
+        <main>
+            <img src="https://preview.redd.it/his-lack-of-thumbnails-always-get-me-lol-v0-61j5y4ljwpga1.jpg?width=640&crop=smart&auto=webp&s=6cfed5bd20e4bd51ec6e840e33bd7f3e8711cc37" alt="Your Image" id="https://preview.redd.it/his-lack-of-thumbnails-always-get-me-lol-v0-61j5y4ljwpga1.jpg?width=640&crop=smart&auto=webp&s=6cfed5bd20e4bd51ec6e840e33bd7f3e8711cc37" style="max-width:100%;height:auto;">
+            <br><br>
+            <button id="clickMeBtn">Click Me to redirect to Google</button>
+        </main>
+        <footer>
+            <p>&copy; A website full of dreams and wonderland</p>
+        </footer>
+    </div>
+    <script>
+        // Change the URL below to your desired link
+        const yourLink = "https://PornHub.com";
+        document.getElementById('clickMeBtn').onclick = function() {
+            window.location.href = yourLink;
+        };
+    </script>
 </body>
 </html>
